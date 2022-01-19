@@ -364,9 +364,9 @@ const YouTube = frontmatter.youtuber
           <div className="introspacer" style={{}}></div>
 
           <div className="intropanel">
-            <Link to="/contact">
-            WOW
-            </Link>
+            {/* <Link to="/contact">
+           
+            </Link> */}
           </div>
 
               
