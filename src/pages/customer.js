@@ -39,7 +39,7 @@ export default function CustomerPage() {
     
   
 
-    <StaticImage src="../img/toddlambert.jpg" alt="Todd Travels" />
+    <StaticImage src="../../static/assets/todd2.jpg" alt="Todd Travels" />
     <br />
      <p>If you should ever have any questions or concerns, please feel free to drop me a line anytime.</p>
 

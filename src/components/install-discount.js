@@ -1,11 +1,11 @@
 import React from 'react'
 // import { navigate } from 'gatsby-link'
-import { FiShare } from 'react-icons/fi';
+// import { FiShare } from 'react-icons/fi';
 import { IoShareOutline } from 'react-icons/io5';
 import { FaRegPlusSquare } from 'react-icons/fa';
-import ScrollAnimation from 'react-animate-on-scroll'
+// import ScrollAnimation from 'react-animate-on-scroll'
 import CookieConsent from "react-cookie-consent"
-import { StaticImage } from "gatsby-plugin-image"
+// import { StaticImage } from "gatsby-plugin-image"
 import styled from "styled-components";
 
 
@@ -76,7 +76,7 @@ left:'-90vw', display:'flex', justifyContent:'center', alignItems:'center', back
 >
 
 
-<StaticImage src="../../static/default-og-image-blank.jpg" alt="Twilightscapes" className="popp" style={{position:'absolute', zIndex:'-1', borderRadius:'12px 12px 12px 12px', backgroundSize:'cover'}} />
+{/* <StaticImage src="../../static/default-og-image-blank.jpg" alt="Twilightscapes" className="popp" style={{position:'absolute', zIndex:'-1', borderRadius:'12px 12px 12px 12px', backgroundSize:'cover'}} /> */}
 
 {/* <div className="backdrop" style={{left:'0', top:'-60px'}}></div> */}
 <div className="container" style={{padding:'0 0', border:'0px solid #555', borderRadius:'8px', color:'#fff', textAlign:'center', position:'relative', textShadow:'2px 4px 0 #000', overflow:'hidden', borderRadius:'12px'}}>

@@ -361,12 +361,14 @@ const YouTube = frontmatter.youtuber
           <div className="horizontal-scroll-wrapper squares" style={{ width:'', padding:'0'}}>
     
     
-          <div style={{width:'1000px', height:'1000px'}}></div>
-          <div style={{width:'100%', height:'1000px', border:'0px solid red', fontSize:'100px', display:'grid', placeContent:'center'}}>
+          <div className="introspacer" style={{}}></div>
+
+          <div className="intropanel">
             <Link to="/contact">
             WOW
             </Link>
-            </div>
+          </div>
+
               
           {data.allFile.edges.map(edge => {
           return <GatsbyImage

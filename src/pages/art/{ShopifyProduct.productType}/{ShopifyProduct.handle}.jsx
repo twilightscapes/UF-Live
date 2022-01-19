@@ -362,7 +362,7 @@ export default function Product({ data: { product, suggestions } }) {
     </div>
 </Link>
   
-    <StaticImage src="../../../img/todd-horizons.jpg" alt="Todd in the Field" className="round" />
+    <StaticImage src="../../../../static/assets/todd-horizons.jpg" alt="Todd in the Field" className="round" />
         
 </div>
 
@@ -375,7 +375,7 @@ export default function Product({ data: { product, suggestions } }) {
 
 
 <a href="https://urbanfetish.com" target="_blank" rel="noopener noreferrer" style={{textDecoration:'none', color:'inherit', lineHeight:'1.7rem'}}>
- <StaticImage src="../../../img/urban-fetish-button.jpg" alt="Urban Fetish" className="round" />
+ <StaticImage src="../../../../static/assets/urban-fetish-button.jpg" alt="Urban Fetish" className="round" />
  <br />
  
  Take a walk on the wild side and follow along as Todd Lambert goes in search of the creepiest, freakiest, spookiest abandoned and desolate locations he can find. 

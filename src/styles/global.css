@@ -1406,6 +1406,33 @@ height:100%;
 
 }
 
+
+.introspacer{
+  width:100%;
+  height:1000px;
+}
+
+.intropanel{
+  width:100%;
+  height:1000px;
+  border:1px solid red;
+  font-size:100px;
+  display:grid;
+  place-content:center;
+}
+
+@media (max-width: 48rem) {
+  .introspacer{
+    width:100%;
+    height:10px !important;
+  }
+}
+
+
+
+
+
+
 /* .horizontal-scroll-wrapper .item :first-child{
   border:2px solid red !important;
   } */
