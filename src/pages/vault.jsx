@@ -5,7 +5,7 @@ import { graphql } from "gatsby"
 import { Layout } from "../components/layout"
 import { Seo } from "../components/seo"
 import SimpleReactLightbox, { SRLWrapper } from "simple-react-lightbox"
-import GalleryMenu1 from "../components/galleryMenu-old"
+// import GalleryMenu1 from "../components/GalleryMenu-old"
 // import { StaticImage } from "gatsby-plugin-image"
 // import ShareSocial from '../../components/share' 
 import TwilightLogo from "../../static/assets/urban-fetish-logo-pink.svg"
@@ -50,7 +50,7 @@ const IndexPage = ({data}) => (
     </div>
     </SRLWrapper></SimpleReactLightbox>
         </div>
-         <GalleryMenu1 />
+         {/* <GalleryMenu1 /> */}
 
          {/* <ShareSocial /> */}
          <div className="spacer66" />
