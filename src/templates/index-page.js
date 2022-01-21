@@ -369,6 +369,7 @@ const YouTube = frontmatter.youtuber
             </Link> */}
           </div>
 
+
               
           {data.allFile.edges.map(edge => {
           return <GatsbyImage
@@ -378,6 +379,8 @@ const YouTube = frontmatter.youtuber
           key={edge.node.id}
         />
         })}
+
+        
     
         </div>
         </SRLWrapper></SimpleReactLightbox>
