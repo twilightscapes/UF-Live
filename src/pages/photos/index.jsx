@@ -5,9 +5,10 @@ import { GatsbyImage } from 'gatsby-plugin-image'
 import { Layout } from "../../components/layout"
 import { Seo } from "../../components/seo"
 import SimpleReactLightbox, { SRLWrapper } from "simple-react-lightbox"
-import GalleryMenu from "../../components/GalleryMenu"
+import GalleryMenu from "../../components/galleryMenu"
 // import { StaticImage } from "gatsby-plugin-image"
 // import ShareSocial from '../../components/share' 
+import Newsignup from "../../components/newssign"
 import TwilightLogo from "../../../static/assets/urban-fetish-logo-pink.svg"
 const IndexPage = ({data}) => (
   
@@ -21,13 +22,11 @@ const IndexPage = ({data}) => (
   {/* <GalleryMenu /> */}
   <div className="sliderholder" style={{display:'flex', justifyContent:'center', width:'100%', overflow:'hidden', position:'relative', padding:' 0',}}>
 
-  <TwilightLogo style={{
-  maxWidth:'50vw', opacity:'.5',
-  position:'absolute', zIndex:'-1', top:'1vh'}} />
-
-  <div className="RArrow">
- <span></span>
-</div>
+  <TwilightLogo className="bglogo" />
+    
+    <div className="RArrow">
+   <span></span>
+  </div>
 
 <SimpleReactLightbox>
       <SRLWrapper options={options} className="">
@@ -35,7 +34,13 @@ const IndexPage = ({data}) => (
       <div className="horizontal-scroll-wrapper squares" style={{ width:'', padding:'0'}}>
 
 
-      <div style={{width:'1000px', height:'1000px'}}></div>
+      <div className="introspacer" style={{}}></div>
+
+          <div className="intropanel">
+            {/* <Link to="/contact">
+           
+            </Link> */}
+          </div>
           
       {data.allFile.edges.map(edge => {
       return <GatsbyImage
@@ -45,6 +50,17 @@ const IndexPage = ({data}) => (
       key={edge.node.id}
     />
     })}
+
+
+<div className="donation" style={{}}>
+{/* <Link to="/contact"> */}
+<div style={{position:'relative', top:'', margin:'0', padding:'25% 0',  width:'', zIndex:'1', textAlign:'', borderRadius:'12px', textDecoration:'none'}}>
+  <Newsignup />
+  </div>
+{/* </Link> */}
+</div>
+
+
     </div>
     </SRLWrapper></SimpleReactLightbox>
         </div>

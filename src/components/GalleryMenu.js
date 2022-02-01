@@ -1,30 +1,38 @@
-import * as React from "react"
-// import { Layout } from "../components/layout"
-// import GoBack from "./goBack"
+import React from 'react'
+// import { navigate } from 'gatsby-link'
+// import { FiShare } from 'react-icons/fi';
+import { FaRegPlusSquare } from 'react-icons/fa';
+import { IoShareOutline } from 'react-icons/io5';
+import { AiOutlineCloseCircle } from 'react-icons/ai';
 import { Link } from "gatsby"
-// import { AnchorLink } from "gatsby-plugin-anchor-links"
+// import ScrollAnimation from 'react-animate-on-scroll'
+// import CookieConsent from "react-cookie-consent"
+// import styled from "styled-components";
 // import { StaticImage } from "gatsby-plugin-image"
-// import { Seo } from "./seo"
-// import CasePanels from "./casepanels"
-// import { SRLWrapper } from "simple-react-lightbox"
-import HideShow from "./GallMenuArchive"
-import styled from "styled-components"
-const CustomBox = styled.div`
 
+export default class Installer extends React.Component {
 
+  state = {
+     isActive:false
+  }
 
+  handleShow = ()=>{
+      this.setState({
+          isActive: true
+      })
+  }
 
+  handleHide = () =>{
+      this.setState({
+          isActive: false
+      })
+  }
 
-
-
-`
-export default function gallmenuPage() {
-   return (
-    <CustomBox>
-
-
-      
-<div className="sliderholder1" style={{height:'65px', overflow:'hidden', width:'', margin:'0 auto 0 auto', padding:'0', objectFit:'contain', borderBottom:'1px solid #333', borderRadius:'0', position:'relative', top:'0', background:'#080808', borderTop:'0px'}}>
+   render(){
+       return(
+           <div className="no-app">
+       
+       <div className="sliderholder1" style={{height:'65px', overflow:'hidden', width:'', margin:'0 auto 0 auto', padding:'0', objectFit:'contain', borderBottom:'1px solid #333', borderRadius:'0', position:'relative', top:'0', background:'#080808', borderTop:'0px'}}>
 
   
 
@@ -80,15 +88,21 @@ export default function gallmenuPage() {
 
 </div>
 
+       <ul className="galmenu fullarchive masonry" style={{borderTop:'0 dotted #222', padding:'10px 0'}}>
 
-<HideShow />
+           {/* <div className="button" onClick={this.handleShow} style={{borderBottom:'1px solid', textAlign:'left', margin:'10px 0', position:'relative', left:'0', width:''}}>Enter Vault</div> */}
+
+       <li className="galmenu-item33" onClick={this.handleShow} style={{borderBottom:'1px solid', textAlign:'left', position:'relative', top:'0', cursor:'pointer', color:'#fff'}}>Full Archives:</li>
 
 
-{/* <ul className="galmenu fullarchive masonry" style={{borderTop:'2px dotted #222', padding:'2%', display:'none'}}>
+{this.state.isActive ? 
+<>
+
+{/* <div className="galmenu-item33" onClick={this.handleShow} style={{borderBottom:'px solid', textAlign:'left', position:'relative', left:'0'}}>Full Archives:</div> */}
 
 
-      <li className="mobilehide" style={{width:'120px', textAlign:'', fontSize:'80%', padding:'0 0 0 0', borderRight:'0px dotted #666', margin:'0 20px 5px 15px', fontWeight:'bold', textShadow:'0px 0px 16px #fff', color:'#fff'}}>Full Archives:</li>
-
+      
+{/* <li aria-label="Close this popup" onClick={this.handleHide} style={{position:'absolute', right:'-5px', top:'-5px', fontSize:'24px'}}><AiOutlineCloseCircle /></li> */}
 
 
       <li className="galmenu-item"><Link to="/photos/gallery1/" className=""  title="Gallery 1" >I</Link></li>
@@ -100,15 +114,13 @@ export default function gallmenuPage() {
       <li className="galmenu-item"><Link to="/photos/gallery7/" className=""   title="Gallery 7">VII</Link></li>
       <li className="galmenu-item"><Link to="/photos/gallery8/" className=""   title="Gallery 8">VIII</Link></li>
       <li className="galmenu-item"><Link to="/photos/gallery9/" className=""   title="Gallery 9">IV</Link></li>
-      </ul> */}
 
 
 
-
-
-
-
-
-    </CustomBox>
-  )
+</>
+  : null }
+      </ul>       
+           </div>
+)
+}
 }
