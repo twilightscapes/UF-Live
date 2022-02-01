@@ -7,7 +7,7 @@ import { Link } from "gatsby"
 // import { Seo } from "./seo"
 // import CasePanels from "./casepanels"
 // import { SRLWrapper } from "simple-react-lightbox"
-import HideShow from "./galleryMenuArchive"
+import HideShow from "./GalleryMenuArchive"
 import styled from "styled-components"
 const CustomBox = styled.div`
 
@@ -18,7 +18,7 @@ const CustomBox = styled.div`
 
 
 `
-export default function testPage() {
+export default function gallmenuPage() {
    return (
     <CustomBox>
 
@@ -84,8 +84,8 @@ export default function testPage() {
 <HideShow />
 
 
-<ul className="galmenu fullarchive masonry" style={{borderTop:'2px dotted #222', padding:'2%', display:'none'}}>
-      {/* <li style={{width:'120px', textAlign:'', fontSize:'80%', padding:'0 1rem', borderRight:'1px dotted #666', margin:'0 1rem 1rem 0',}}>Bonus Galleries</li> */}
+{/* <ul className="galmenu fullarchive masonry" style={{borderTop:'2px dotted #222', padding:'2%', display:'none'}}>
+
 
       <li className="mobilehide" style={{width:'120px', textAlign:'', fontSize:'80%', padding:'0 0 0 0', borderRight:'0px dotted #666', margin:'0 20px 5px 15px', fontWeight:'bold', textShadow:'0px 0px 16px #fff', color:'#fff'}}>Full Archives:</li>
 
@@ -100,7 +100,7 @@ export default function testPage() {
       <li className="galmenu-item"><Link to="/photos/gallery7/" className=""   title="Gallery 7">VII</Link></li>
       <li className="galmenu-item"><Link to="/photos/gallery8/" className=""   title="Gallery 8">VIII</Link></li>
       <li className="galmenu-item"><Link to="/photos/gallery9/" className=""   title="Gallery 9">IV</Link></li>
-      </ul>
+      </ul> */}
 
 
 
