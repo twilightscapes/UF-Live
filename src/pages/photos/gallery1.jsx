@@ -1,34 +1,36 @@
 import React from "react"
 import { graphql } from "gatsby"
 // import Img from 'gatsby-image'
-import { GatsbyImage } from 'gatsby-plugin-image'
+ import { GatsbyImage } from 'gatsby-plugin-image'
 import { Layout } from "../../components/layout"
 import { Seo } from "../../components/seo"
 import SimpleReactLightbox, { SRLWrapper } from "simple-react-lightbox"
-import GalleryMenu from "../../components/GalleryMenu"
+import GalleryMenu from "../../components/galleryMenu"
 // import { StaticImage } from "gatsby-plugin-image"
 // import ShareSocial from '../../components/share' 
+
 import TwilightLogo from "../../../static/assets/urban-fetish-logo-pink.svg"
 import Newsignup from "../../components/newssign"
-const spookyPage = ({data}) => (
+
+const Gal1Page = ({data}) => (
   
-<Layout className="thanks-page">
+      <Layout className="thanks-page">
 
 <Seo
-          title={`Spooky Abandoned Photography`}
-          description={`Urban Fetish Photography of spooky and scary locations`}
-          image={'https://urbanfetish.com/images/spooky/spooky-abandoned27.jpg'}
+          title={`Abandoned Urban Exploration Photography`}
+          description={`Urban Fetish - Abandoned Urban Exploration Photography`}
+          image={'https://urbanfetish.com/default-og-image-blank.jpg'}
         />
-  {/* <GalleryMenu /> */}
-  <div className="sliderholder" style={{display:'flex', justifyContent:'center', width:'100%', overflow:'hidden', position:'relative', padding:' 0',}}>
+ <div className="sliderholder" style={{display:'flex', justifyContent:'center', width:'100%', overflow:'hidden', position:'relative', padding:' 0',}}>
+      
 
-  <TwilightLogo className="bglogo" />
+ <TwilightLogo className="bglogo" />
     
-    <div className="RArrow">
-   <span></span>
-  </div>
-
-<SimpleReactLightbox>
+      <div className="RArrow">
+     <span></span>
+    </div>
+    
+    <SimpleReactLightbox>
       <SRLWrapper options={options} className="">
       {/* <div className="masonry" style={{}}> */}
       <div className="horizontal-scroll-wrapper squares" style={{ width:'', padding:'0'}}>
@@ -36,13 +38,21 @@ const spookyPage = ({data}) => (
 
       <div className="introspacer" style={{}}></div>
 
-<div className="intropanel">
-  {/* <Link to="/contact">
- 
-  </Link> */}
-</div>
+          <div className="intropanel">
+            {/* <Link to="/contact">
+           
+            </Link> */}
+          </div>
           
-      {data.allFile.edges.map(edge => {
+    {/* {data.allFile.edges.map(edge => {
+      return <GatsbyImage
+      image={edge.node.childImageSharp.gatsbyImageData}
+      srl_gallery_image="true"
+      alt={edge.node.name}
+    />
+    })} */}
+
+{data.allFile.edges.map(edge => {
       return <GatsbyImage
       image={edge.node.childImageSharp.gatsbyImageData}
       srl_gallery_image="true"
@@ -60,21 +70,20 @@ const spookyPage = ({data}) => (
 {/* </Link> */}
 </div>
 
-
     </div>
     </SRLWrapper></SimpleReactLightbox>
-        </div>
-         <GalleryMenu />
+            </div>
+            
+             <GalleryMenu />
 
-
-         {/* <ShareSocial /> */}
-
-         {/* <div className="spacer66" /> */}
-
-  </Layout>
-)
-
-const options = {
+    
+             {/* <ShareSocial /> */}
+             {/* <div className="spacer66" /> */}
+    
+      </Layout>
+    )
+    
+    const options = {
   settings: {
     autoplaySpeed: 4000,
     boxShadow: '0px 0px 20px #000',
@@ -133,12 +142,13 @@ showCaption: false
     showProgressBar: true
   },
 };
-export default spookyPage
+
+export default Gal1Page
 
 export const indexQuery = graphql`
-query spookyPhotos {
+query gallery1Photos {
   allFile(
-    filter: {relativeDirectory: {eq: "spooky"}, relativePath: {}}
+    filter: {relativeDirectory: {eq: "gallery1"}, relativePath: {}}
     sort: {order: ASC, fields: name}
   ) {
     edges {

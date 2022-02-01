@@ -346,30 +346,29 @@ const YouTube = frontmatter.youtuber
 
       <div className="sliderholder" style={{display:'flex', justifyContent:'center', width:'100%', overflow:'hidden', position:'relative', padding:' 0',}}>
       
-      <TwilightLogo style={{
-      // filter:'brightness(0.7)contrast(4.4)hue-rotate(117deg)saturate(9.9)',
-       maxWidth:'50vw', opacity:'.5',
-      position:'absolute', zIndex:'-1', top:'1vh'}} />
-      
-      <div className="RArrow">
-         <span></span>
-        </div>
+
+      <TwilightLogo className="bglogo" />
     
-    <SimpleReactLightbox>
+    <div className="RArrow">
+   <span></span>
+  </div>
+    
+        <SimpleReactLightbox>
           <SRLWrapper options={options} className="">
           {/* <div className="masonry" style={{}}> */}
           <div className="horizontal-scroll-wrapper squares" style={{ width:'', padding:'0'}}>
     
     
-          <div className="introspacer" style={{}}></div>
+         
+      <div className="introspacer" style={{}}></div>
 
-          <div className="intropanel">
-            {/* <Link to="/contact">
-           
-            </Link> */}
-          </div>
+<div className="intropanel">
+  {/* <Link to="/contact">
+ 
+  </Link> */}
+</div>
 
-
+       
               
           {data.allFile.edges.map(edge => {
           return <GatsbyImage
@@ -380,8 +379,15 @@ const YouTube = frontmatter.youtuber
         />
         })}
 
-        
-    
+<div className="donation" style={{}}>
+{/* <Link to="/contact"> */}
+<div style={{position:'relative', top:'', margin:'0', padding:'25% 0',  width:'', zIndex:'1', textAlign:'', borderRadius:'12px', textDecoration:'none'}}>
+  <Newsignup />
+  </div>
+{/* </Link> */}
+</div>
+
+
         </div>
         </SRLWrapper></SimpleReactLightbox>
             </div>

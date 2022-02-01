@@ -7,6 +7,7 @@ import { Link } from "gatsby"
 // import { Seo } from "./seo"
 // import CasePanels from "./casepanels"
 // import { SRLWrapper } from "simple-react-lightbox"
+import HideShow from "./galleryMenuArchive"
 import styled from "styled-components"
 const CustomBox = styled.div`
 
@@ -32,6 +33,14 @@ export default function testPage() {
 
 
 <div style={{width:'100px', height:'100px', display:'inline-block', border:'0px solid blue', padding:'0 0 0 0', marginTop:'0'}}></div>
+
+<div name="limitededitions" style={{border:'0px solid dotted', borderRadius:'0 12px 0 0', background:'', paddingTop:'12px', paddingBottom:'10px',
+//  paddingLeft:'-40px', 
+ marginLeft:'-60px', textShadow:'0px 0px 16px #fff', color:'#fff'}}>
+  Themed Galleries:
+</div>
+
+
 
   <div><Link className="button" to="/photos/still-life">
   Still Life
@@ -72,6 +81,26 @@ export default function testPage() {
 </div>
 
 
+<HideShow />
+
+
+<ul className="galmenu fullarchive masonry" style={{borderTop:'2px dotted #222', padding:'2%', display:'none'}}>
+      {/* <li style={{width:'120px', textAlign:'', fontSize:'80%', padding:'0 1rem', borderRight:'1px dotted #666', margin:'0 1rem 1rem 0',}}>Bonus Galleries</li> */}
+
+      <li className="mobilehide" style={{width:'120px', textAlign:'', fontSize:'80%', padding:'0 0 0 0', borderRight:'0px dotted #666', margin:'0 20px 5px 15px', fontWeight:'bold', textShadow:'0px 0px 16px #fff', color:'#fff'}}>Full Archives:</li>
+
+
+
+      <li className="galmenu-item"><Link to="/photos/gallery1/" className=""  title="Gallery 1" >I</Link></li>
+      <li className="galmenu-item"><Link to="/photos/gallery2/" className=""   title="Gallery 2">II</Link></li>
+      <li className="galmenu-item"><Link to="/photos/gallery3/" className=""   title="Gallery 3">III</Link></li>
+      <li className="galmenu-item"><Link to="/photos/gallery4/" className=""   title="Gallery 4">IV</Link></li>
+      <li className="galmenu-item"><Link to="/photos/gallery5/" className=""   title="Gallery 5">V</Link></li>
+      <li className="galmenu-item"><Link to="/photos/gallery6/" className=""   title="Gallery 6">VI</Link></li>
+      <li className="galmenu-item"><Link to="/photos/gallery7/" className=""   title="Gallery 7">VII</Link></li>
+      <li className="galmenu-item"><Link to="/photos/gallery8/" className=""   title="Gallery 8">VIII</Link></li>
+      <li className="galmenu-item"><Link to="/photos/gallery9/" className=""   title="Gallery 9">IV</Link></li>
+      </ul>
 
 
 
@@ -80,176 +109,6 @@ export default function testPage() {
 
 
 
-
-
-
-
-
-
-{/* <CasePanels /> */}
-
-      {/* <div className="zoombox">
-      <SRLWrapper options={options} className="">
-
-   <StaticImage
-          src="../../static/assets/homepage.jpg"
-          alt="Start with the best built website and then make sure it's as fast as can be. Then make some of the most innovative features that nobody else has. Finally, make sure it's virtually hack-proof, easy to use and ready to go!"
-          className="item"
-          style={{borderRadius:'12', margin:'2rem 4%'}}
-        />
-
-<div className="masonry" style={{}}>
-
-<StaticImage
-          src="../../static/assets/Experiences-Header-2.jpg"
-          alt="Image 2"
-          srl_gallery_image="true"
-          className="item"
-        />
-
-<StaticImage
-          src="../../static/assets/Experiences-Header-6.jpg"
-          alt="Image 4"
-          srl_gallery_image="true"
-          className="item"
-        />
-
-
-<StaticImage
-          src="../../static/assets/Experiences-Header-3.jpg"
-          alt="Image 3"
-          srl_gallery_image="true"
-          className="item"
-        />
-
-
-<StaticImage
-          src="../../static/assets/Experiences-Header-4.jpg"
-          alt="Image 4"
-          srl_gallery_image="true"
-          className="item"
-        />
-
-<StaticImage
-          src="../../static/assets/Experiences-Header-5.jpg"
-          alt="Image 3"
-          srl_gallery_image="true"
-          className="item"
-        />
-</div>
-</SRLWrapper>
-  </div> */}
-
-    
-    {/* <div className="spacer66"></div> */}
-
-
-    {/* <div className="zoombox1">
-      <SRLWrapper options={options} className="">
-
-   <StaticImage
-          src="../../src/img/DendroidDreams/sea-of-sorrow.jpg"
-          alt="Start with the best built website and then make sure it's as fast as can be. Then make some of the most innovative features that nobody else has. Finally, make sure it's virtually hack-proof, easy to use and ready to go!"
-          className="item"
-          style={{borderRadius:'12', margin:'1rem 4%'}}
-        />
-
-<div className="masonry" style={{}}>
-
-<StaticImage
-          src="../../src/img/DendroidDreams/dances-with-the-moon.jpg"
-          alt="Image 2"
-          srl_gallery_image="true"
-          className="item"
-        />
-
-<StaticImage
-          src="../../src/img/DendroidDreams/big-dreams.jpg"
-          alt="Image 4"
-          srl_gallery_image="true"
-          className="item"
-        />
-
-
-<StaticImage
-          src="../../src/img/DendroidDreams/amber-oak.jpg"
-          alt="Image 3"
-          srl_gallery_image="true"
-          className="item"
-        />
-
-
-<StaticImage
-          src="../../src/img/DendroidDreams/deciduous-doiley.jpg"
-          alt="Image 4"
-          srl_gallery_image="true"
-          className="item"
-        />
-
-<StaticImage
-          src="../../src/img/DendroidDreams/evening-crown.jpg"
-          alt="Image 3"
-          srl_gallery_image="true"
-          className="item"
-        />
-
-<StaticImage
-          src="../../src/img/DendroidDreams/gnarled-barkley.jpg"
-          alt="Image 3"
-          srl_gallery_image="true"
-          className="item"
-        />
-
-<StaticImage
-          src="../../src/img/DendroidDreams/lonely-tree.jpg"
-          alt="Image 3"
-          srl_gallery_image="true"
-          className="item"
-        />
-
-<StaticImage
-          src="../../src/img/DendroidDreams/moaning-tree.jpg"
-          alt="Image 3"
-          srl_gallery_image="true"
-          className="item"
-        />
-
-<StaticImage
-          src="../../src/img/DendroidDreams/silver-serenity.jpg"
-          alt="Image 3"
-          srl_gallery_image="true"
-          className="item"
-        />
-        <StaticImage
-          src="../../src/img/DendroidDreams/tree-tops.jpg"
-          alt="Image 3"
-          srl_gallery_image="true"
-          className="item"
-        />
-        <StaticImage
-          src="../../src/img/DendroidDreams/tree-with-a-view.jpg"
-          alt="Image 3"
-          srl_gallery_image="true"
-          className="item"
-        />
-        <StaticImage
-          src="../../src/img/DendroidDreams/waimeia-milkyway.jpg"
-          alt="Image 3"
-          srl_gallery_image="true"
-          className="item"
-        />
-        <StaticImage
-          src="../../src/img/DendroidDreams/wishing-tree.jpg"
-          alt="Image 3"
-          srl_gallery_image="true"
-          className="item"
-        />
-
-</div>
-</SRLWrapper>
-  </div> */}
-    
-    {/* </Layout> */}
     </CustomBox>
   )
 }
