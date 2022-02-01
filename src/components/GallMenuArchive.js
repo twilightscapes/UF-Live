@@ -38,7 +38,7 @@ export default class Installer extends React.Component {
 
            {/* <div className="button" onClick={this.handleShow} style={{borderBottom:'1px solid', textAlign:'left', margin:'10px 0', position:'relative', left:'0', width:''}}>Enter Vault</div> */}
 
-       <div className="galmenu-item33" onClick={this.handleShow} style={{borderBottom:'1px solid', textAlign:'left', position:'relative', top:'0', cursor:'pointer'}}>Full Archives:</div>
+       <li className="galmenu-item33" onClick={this.handleShow} style={{borderBottom:'1px solid', textAlign:'left', position:'relative', top:'0', cursor:'pointer', color:'#fff'}}>Full Archives:</li>
 
 
 {this.state.isActive ? 

@@ -7,7 +7,7 @@ import { Link } from "gatsby"
 // import { Seo } from "./seo"
 // import CasePanels from "./casepanels"
 // import { SRLWrapper } from "simple-react-lightbox"
-import HideShow from "./GalleryMenuArchive"
+import HideShow from "./GallMenuArchive"
 import styled from "styled-components"
 const CustomBox = styled.div`
 

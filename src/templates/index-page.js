@@ -18,7 +18,7 @@ import Newsignup from "../components/newssign"
 import BlogListHome from "../components/blog-list-home"
 import { Seo } from "../components/seo"
 import { Layout } from "../components/layout"
-import GalleryMenu from "../components/GalleryMenu"
+import GalleryMenu from "../components/galleryMenu"
 import SimpleReactLightbox, { SRLWrapper } from "simple-react-lightbox"
 import TwilightLogo from "../../static/assets/urban-fetish-logo-pink.svg"
 const CustomBox = styled.div`
