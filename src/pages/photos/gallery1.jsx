@@ -5,7 +5,7 @@ import { graphql } from "gatsby"
 import { Layout } from "../../components/layout"
 import { Seo } from "../../components/seo"
 import SimpleReactLightbox, { SRLWrapper } from "simple-react-lightbox"
-import GalleryMenu from "../../components/galleryMenu"
+import GallMenu from "../../components/galleryMenu"
 // import { StaticImage } from "gatsby-plugin-image"
 // import ShareSocial from '../../components/share' 
 
@@ -74,7 +74,7 @@ const Gal1Page = ({data}) => (
     </SRLWrapper></SimpleReactLightbox>
             </div>
             
-             <GalleryMenu />
+             <GallMenu />
 
     
              {/* <ShareSocial /> */}

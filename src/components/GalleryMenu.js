@@ -48,6 +48,9 @@ export default class Installer extends React.Component {
   Themed Galleries:
 </div>
 
+<div><Link className="button" to="/photos/dive-bars">
+  Dive Bars (new!)
+</Link></div>
 
 
   <div><Link className="button" to="/photos/still-life">
