@@ -4,8 +4,8 @@ import Client from "shopify-buy"
 
 const client = Client.buildClient(
   {
-    // domain: process.env.GATSBY_SHOPIFY_STORE_URL,
-    domain: "checkout.securestore.shop",
+    domain: process.env.GATSBY_SHOPIFY_STORE_URL,
+    // domain: "checkout.securestore.shop",
     storefrontAccessToken: process.env.GATSBY_STOREFRONT_ACCESS_TOKEN,
   },
   fetch
